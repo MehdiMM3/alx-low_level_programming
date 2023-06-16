@@ -4,6 +4,9 @@
 
 /**
  * main - Entry point
+ *
+ * Description : positive or negative
+ *
  * Return : 0 (success)
  */
 
