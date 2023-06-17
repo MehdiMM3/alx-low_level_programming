@@ -1,29 +1,23 @@
 #include <stdio.h>
 
-/*
- * main - Entry point
+/**
+ * main - Entry point of the program
  *
- * Description: print lower and upper case alphabet
+ * Description: upper lower
  *
- * Return: 0 (success)
-*/
-
+ * Return: 0 on success
+ */
 int main(void)
 {
-	char ch = 'a', ch1 = 'A';
+	char letter;
 
-	while (ch <= 'z')
-	{
-		putchar(ch);
-		ch++;
-	}
-	while (ch1 <= 'Z')
-	{
-		putchar(ch1);
-		ch1++;
-	}
+	for (letter = 'a'; letter <= 'z'; letter++)
+		putchar(letter);
+
+	for (letter = 'A'; letter <= 'Z'; letter++)
+		putchar(letter);
+
 	putchar('\n');
 
 	return (0);
 }
-
