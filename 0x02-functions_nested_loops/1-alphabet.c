@@ -1,18 +1,8 @@
-#include <stdio.h>
+#include"main.h"
 
 /**
- * main - Entry point 
- *
- * Description: alphabet with only putchar
- *
- * Return: 0 (success)
+ * print_alphabet - the alphabet a - z
 */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
 
 void print_alphabet(void)
 {
