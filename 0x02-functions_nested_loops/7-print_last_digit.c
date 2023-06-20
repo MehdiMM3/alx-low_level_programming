@@ -1,22 +1,22 @@
-#include "main.h"
+#include"main.h"
 
 /**
  * print_last_digit - prints last digit
  *
- *@x: takes number imput
+ *@n: takes number imput
  *
- * return: Always 0 (success)
+ * return: Last digit
 */
 
-int print_last_digit(int x)
+int print_last_digit(int n)
 {
 	int z;
 
-	if (x < 0)
-		z = -1 * (x % 10);
+	if (n < 0)
+		z = -1 * (n % 10);
 	else
-		z = x % 10;
+		z = n % 10;
 
-	_purchar(z + '0');
+	_putchar(z + '0');
 	return (z);
 }
