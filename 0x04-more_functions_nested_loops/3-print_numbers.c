@@ -1,20 +1,19 @@
 #include "main.h"
 
 /**
- * print_numbers - prints from 0 to 9
- *
- * Return: Always 0 (success)
+ * more_numbers - Prints numbers from 0 to 14, 10 times
 */
 
-void print_numbers(void)
+void more_numbers(void)
 {
-	int num = 0;
+	int i, j;
 
-	do {
-		_putchar(num + 48);
-		num++;
-	} while (num >= 0 && num <= 9)
-	_putchar('\n');
-
-	return (0);
+	for (i = 0; i < 10; i++)
+	{
+		for (j = 0; j <= 14; j++)
+		{
+			_putchar(j);
+		}
+		_putchar('\n');
+	}
 }
