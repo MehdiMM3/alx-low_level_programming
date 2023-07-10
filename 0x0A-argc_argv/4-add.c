@@ -3,7 +3,7 @@
 
 /**
  * main - start here
- * @@argc: number
+ * @argc: number
  * @argv: pointer
  * Return: always 0
 */
