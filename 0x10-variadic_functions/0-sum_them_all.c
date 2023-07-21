@@ -4,7 +4,7 @@
  * sum_them_all - sums variable arguments
  * @n: number of arguments
  * @...: int
- * return: int
+ * Return: int
 */
 int sum_them_all(const unsigned int n, ...)
 {
