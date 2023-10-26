@@ -2,18 +2,18 @@
 
 /**
  * binary_to_uint - conv the binary numb
- * @rc: binary numb
- * Return: unsigned rc
+ * @b: binary numb
+ * Return: unsigned b
 */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int d = 0;
 
-	if (!rc)
+	if (!b)
 		return (0);
-	while (*rc)
+	while (*b)
 	{
-		if (*rc != '0' && *rc != '1')
+		if (*b != '0' && *b != '1')
 			return (0);
 		d = d * 2 + (*b++ - '0');
 	}
