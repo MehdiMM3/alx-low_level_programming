@@ -24,16 +24,16 @@ int _strlen(char *s)
 */
 int create_file(const char *filename, char *text_content)
 {
-	int fd;
-	ssize_t bytes = 0, len = _strlen(text_content);
+	int x;
+	ssize_t y = 0, qz = _strlen(text_content);
 
 	if (!filename)
 		return (-1);
-	fd = open(filename, O_WRONLY, | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-	if (fd == -1)
+	x = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
+	if (x == -1)
 		return (-1);
-	if (len)
-		bytes = write(fd, text_content, len);
-	close(fd);
-	return (bytes == len ? 1 : -1);
+	if (qz)
+		y = write(x, text_content, qz);
+	close(x);
+	return (y == qz ? 1 : -1);
 }
