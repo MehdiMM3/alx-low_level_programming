@@ -8,18 +8,20 @@
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int index;
-	hash_node_t *azq;
+	hash_node_t *azw;
 
-	if (ht == NULL || ht->array == NULL || ht->size == 0 ||
-			key == NULL || strlen(key) == 0)
+	if (ht == NULL || key == NULL)
 		return (NULL);
+
 	index = key_index((const unsigned char *)key, ht->size);
-	azq = ht->array[index];
-	while (azq != NULL)
+	azw = ht->array[index];
+
+	while (azw != NULL)
 	{
-		if (strcmp(azq->key, key) == 0)
-			return (azq->value);
-		azq = azq->next;
+		if (strcmp(azw->key, key) == 0)
+			return (azw->value);
+		azw = azw->next;
 	}
+
 	return (NULL);
 }
